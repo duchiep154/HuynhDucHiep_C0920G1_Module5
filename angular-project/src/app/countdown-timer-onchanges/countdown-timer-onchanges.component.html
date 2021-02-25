@@ -1,0 +1,18 @@
+<h2>Countdown Timer onchanges</h2>
+
+<div class="container-fluid" >
+  <div class="input-group input-group-sm mb-3" style="width: 50%" >
+    <label for="inputtime"> enter seconds to countdown :</label>
+    <input type="text" [(ngModel)]="seconds"  class="form-control" id="inputtime" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    <button (click)="set()">set time</button>
+  </div>
+  <div class="group-actions">
+    <button type="button" class="btn btn-primary" (click)="start()">Start</button>
+    <button type="button" class="btn btn-danger" (click)="stop()">Stop</button>
+    <button  type="button" class="btn btn-success" (click)="reset()">Reset</button>
+  </div>
+  <div class="timer">
+    <span class="timer-text">{{ remainingTime }}</span>
+  </div>
+  <p style=" font-size: large; color: crimson "  >{{ message }}</p>
+</div>

@@ -40,6 +40,6 @@ export class AppComponent {
     this.article.title = document.getElementById('article-title').value;
     // @ts-ignore
     this.article.url = document.getElementById('article-url').value;
-    this.articles.push(this.article);
+    this.articles.push({title: this.article.title, url: this.article.url});
   }
 }
