@@ -1,0 +1,39 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "HoaiLam",
+      "birthday": "ng-01-1991",
+      "email": "hoailam@abc.com",
+      "phone": "0123456789",
+      "type": "Vip"
+    },
+    {
+      "id": 2,
+      "name": "HoaiLinh",
+      "birthday": "02-02-1992",
+      "email": "hoailinh@abc.com",
+      "phone": "0123456789",
+      "type": "Vip"
+    },
+    {
+      "id": 3,
+      "name": "ChiTai",
+      "birthday": "03-03-1993",
+      "email": "chitai@abc.com",
+      "phone": "0123456789",
+      "type": "Vip"
+    },
+    {
+      "id": 4,
+      "name": "Camly",
+      "birthday": "04-04-1994",
+      "email": "camly@abc.com",
+      "phone": "0123456789",
+      "type": "diamond"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

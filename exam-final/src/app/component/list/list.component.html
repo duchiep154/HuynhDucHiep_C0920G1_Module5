@@ -1,0 +1,60 @@
+<div class="container ">
+  <h1 class="text-center">Danh sách</h1>
+  <div class="col-4">
+    <button routerLink="/create"  class="btn btn-success col-4">Tạo mới</button>
+  </div>
+  <div class="row mt-3 mb-3">
+
+    <div class="col-8 row">
+      <select style="width: 200px" class="form-control" [(ngModel)]="selete">
+        <option value="">Chọn trường tìm kiếm</option>
+        <option value="id">ID</option>
+        <option value="name">NAME</option>
+      </select>
+      <input #element style="width: 250px; margin-left: 10px" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button (click)="search(element.value)" class="btn btn-outline-success col-3" type="submit">Tìm kiếm</button>
+    </div>
+  </div>
+
+  <table class="table table-hover ">
+    <thead>
+    <tr>
+      <th>Mã sổ</th>
+      <th >Mã khách hàng</th>
+      <th>Tên khách hàng</th>
+      <th>Ngày mở sổ</th>
+      <th>Thời gian bắt đầu gửi</th>
+      <th>Kỳ hạn</th>
+      <th>Số tiền gửi</th>
+      <th>Lãi xuất</th>
+      <th>Ưu đãi</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let s of soTietKiemList">
+      <td> {{s.id}} </td>
+      <td> {{s.khachHang.id}} </td>
+      <td> {{s.khachHang.name}} </td>
+      <td> {{s.ngayMoSo}} </td>
+      <td> {{s.ngayGui}} </td>
+      <td> {{s.kyHan.name}} </td>
+      <td> {{s.soTienGui}} </td>
+      <td> {{s.laiXuat}}%/năm </td>
+      <td> {{s.uuDai}} </td>
+      <td style="width: 180px">
+        <button [routerLink]="'/update/' + s.id" style="margin-left: 5px" class="btn btn-outline-primary"><i class="fa fa-edit"></i></button>
+        <button [routerLink]="'/detail/' + s.id" style="margin-left: 5px" class="btn btn-outline-info"><i class="fa fa-user"></i></button>
+        <button (click)="openDialog(s)" style="margin-left: 5px" class="btn btn-outline-danger"><i class="fa fa-recycle"></i></button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+<!--  <nav class="d-flex justify-content-center page" >-->
+<!--    <ul class="pagination">-->
+<!--      <li class="page-item"><button *ngIf="page > 1" (click)="page = page - 1; getAllHavePagination()" class="page-link bg-dark text-light" style="width: 100px">Previous</button></li>-->
+<!--      <li class="page-item active "><button class="page-link" style="background-color: black !important; border: 1px solid black" >{{page}}</button></li>-->
+<!--      <li class="page-item"><button *ngIf="check"  (click)="page = page + 1; getAllHavePagination()" class="page-link bg-dark text-light" style="width: 100px">Next</button></li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+</div>

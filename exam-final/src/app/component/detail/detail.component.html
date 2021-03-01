@@ -1,0 +1,61 @@
+<div class="container mt-3">
+  <h2 class="text-center mb-2">chi tiet</h2>
+<!--  <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">-->
+    <div class="row">
+      <div class="col-6">
+        <div>
+          <label>Mã số sổ</label>
+          <input [value]="soTietKiem.id" readonly  type="text" class="form-control" >
+        </div>
+        <div>
+          <label>Mã khách hàng</label>
+          <input [value]="soTietKiem.khachHang.id" readonly type="text" class="form-control" >
+        </div>
+        <div>
+          <label>Tên khách hàng</label>
+          <input [value]="soTietKiem.khachHang.name" type="text" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+        <div>
+          <label>Ngày mở sổ</label>
+          <input [value]="soTietKiem.ngayMoSo" type="date" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+        <div>
+          <label>Ngày bắt đầu gửi</label>
+          <input [value]="soTietKiem.ngayGui" type="date" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+      </div>
+
+      <div class="col-6">
+        <div>
+          <label>Kỳ hàng</label>
+          <input [value]="soTietKiem.kyHan.name" type="text" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+        <div>
+          <label>Số tiền gửi</label>
+          <input [value]="soTietKiem.soTienGui" type="number" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+
+        <div>
+          <label>Lãi xuất</label>
+          <input [value]="soTietKiem.laiXuat" type="text" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+        <div>
+          <label>Ưu đãi</label>
+          <input [value]="soTietKiem.uuDai" type="text" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-end mt-3">
+      <button routerLink="/list" style="width: 110px" class="btn btn-primary">Quay lại</button>
+<!--      <button style="margin-left: 5px; width: 110px;" class="btn btn-success">Xác nhận</button>-->
+    </div>
+<!--  </form>-->
+</div>

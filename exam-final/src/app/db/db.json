@@ -1,0 +1,84 @@
+{
+  "khachHang": [
+    {
+      "id": 1,
+      "name": "huynh duc hiep"
+    },
+    {
+      "id": 2,
+      "name": "nguyen thi be ut"
+    },
+    {
+      "id": 3,
+      "name": "huynh duc phat"
+    }
+  ],
+  "soTietKiem": [
+    {
+      "ngayMoSo": "2021-02-16",
+      "ngayGui": "2021-02-08",
+      "soTienGui": 200000100,
+      "uuDai": "mu bao hiem",
+      "laiXuat": 8,
+      "kyHan": {
+        "id": 3,
+        "name": "12 tháng"
+      },
+      "khachHang": {
+        "id": 1,
+        "name": "nguyen thi be hieu"
+      },
+      "id": 1
+    },
+    {
+      "ngayMoSo": "2021-02-16",
+      "ngayGui": "2021-02-08",
+      "soTienGui": 200000100,
+      "uuDai": "mu bao hiem",
+      "laiXuat": 8,
+      "kyHan": {
+        "id": 1,
+        "name": "3 tháng"
+      },
+      "khachHang": {
+        "id": 3,
+        "name": "huynh duc phat"
+      },
+      "id": 2
+    },
+    {
+      "ngayMoSo": "2021-02-16",
+      "ngayGui": "2021-02-08",
+      "soTienGui": 2007777777777,
+      "uuDai": "mu bao hiem",
+      "laiXuat": 8,
+      "kyHan": {
+        "id": 1,
+        "name": "3 tháng"
+      },
+      "khachHang": {
+        "id": 3,
+        "name": "huynh duc hiep hiep"
+      },
+      "id": 3
+    }
+  ],
+  "kyHan": [
+    {
+      "id": 1,
+      "name": "3 tháng"
+    },
+    {
+      "id": 2,
+      "name": "6 tháng"
+    },
+    {
+      "id": 3,
+      "name": "12 tháng"
+    },
+    {
+      "id": 4,
+      "name": "Không kỳ hạn"
+    }
+  ]
+}
