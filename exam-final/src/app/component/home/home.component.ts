@@ -8,6 +8,7 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  title = 'exam-final';
 
   constructor(private showMessage: ShowMessage) { }
 

@@ -40,8 +40,8 @@ export class SoTietKiemService {
   }
 
 
-  getAllHavePagination(page: number, limit: number) {
-    return this.http.get<SoTietKiem[]>(this.url + '/_page=' + page + '&_limit=' + limit);
+  getAllHavePagination( limit: number,page: number) {
+    return this.http.get<SoTietKiem[]>(this.url  + '?_limit=' + limit + '&_page=' + page);
   }
   create(soTietKiem: SoTietKiem): Observable<SoTietKiem> {
     return this.http.post<SoTietKiem>(this.url, soTietKiem);

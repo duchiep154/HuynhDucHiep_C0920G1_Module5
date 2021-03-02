@@ -13,17 +13,17 @@
         </div>
         <div>
           <label>Tên khách hàng</label>
-          <input [value]="soTietKiem.khachHang.name" type="text" class="form-control" placeholder="Nhập họ và tên">
+          <input [value]="soTietKiem.khachHang.name" type="text" class="form-control" readonly>
         </div>
 
         <div>
           <label>Ngày mở sổ</label>
-          <input [value]="soTietKiem.ngayMoSo" type="date" class="form-control" placeholder="Nhập họ và tên">
+          <input [value]="soTietKiem.ngayMoSo" type="date" class="form-control" readonly >
         </div>
 
         <div>
           <label>Ngày bắt đầu gửi</label>
-          <input [value]="soTietKiem.ngayGui" type="date" class="form-control" placeholder="Nhập họ và tên">
+          <input [value]="soTietKiem.ngayGui" type="date" class="form-control" readonly>
         </div>
 
       </div>
@@ -31,31 +31,30 @@
       <div class="col-6">
         <div>
           <label>Kỳ hàng</label>
-          <input [value]="soTietKiem.kyHan.name" type="text" class="form-control" placeholder="Nhập họ và tên">
+          <input [value]="soTietKiem.kyHan.name" type="text" class="form-control" readonly>
         </div>
 
         <div>
           <label>Số tiền gửi</label>
-          <input [value]="soTietKiem.soTienGui" type="number" class="form-control" placeholder="Nhập họ và tên">
+          <input [value]="soTietKiem.soTienGui" type="number" class="form-control" readonly>
         </div>
 
 
         <div>
           <label>Lãi xuất</label>
-          <input [value]="soTietKiem.laiXuat" type="text" class="form-control" placeholder="Nhập họ và tên">
+          <input [value]="soTietKiem.laiXuat" type="text" class="form-control" readonly>
         </div>
 
         <div>
           <label>Ưu đãi</label>
-          <input [value]="soTietKiem.uuDai" type="text" class="form-control" placeholder="Nhập họ và tên">
+          <input [value]="soTietKiem.uuDai" type="text" class="form-control" readonly>
         </div>
 
       </div>
     </div>
 
     <div class="d-flex justify-content-end mt-3">
-      <button routerLink="/list" style="width: 110px" class="btn btn-primary">Quay lại</button>
-<!--      <button style="margin-left: 5px; width: 110px;" class="btn btn-success">Xác nhận</button>-->
+      <button routerLink="/list" style="width: 110px" class="btn btn-outline-primary">Quay lại</button>
     </div>
 <!--  </form>-->
 </div>

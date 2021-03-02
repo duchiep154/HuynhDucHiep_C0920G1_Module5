@@ -1,7 +1,7 @@
 <div class="container ">
   <h1 class="text-center">Danh sách</h1>
   <div class="col-4">
-    <button routerLink="/create"  class="btn btn-success col-4">Tạo mới</button>
+    <button routerLink="/create"  class="btn btn-outline-success col-4">Tạo mới</button>
   </div>
   <div class="row mt-3 mb-3">
 
@@ -50,11 +50,11 @@
     </tr>
     </tbody>
   </table>
-<!--  <nav class="d-flex justify-content-center page" >-->
-<!--    <ul class="pagination">-->
-<!--      <li class="page-item"><button *ngIf="page > 1" (click)="page = page - 1; getAllHavePagination()" class="page-link bg-dark text-light" style="width: 100px">Previous</button></li>-->
-<!--      <li class="page-item active "><button class="page-link" style="background-color: black !important; border: 1px solid black" >{{page}}</button></li>-->
-<!--      <li class="page-item"><button *ngIf="check"  (click)="page = page + 1; getAllHavePagination()" class="page-link bg-dark text-light" style="width: 100px">Next</button></li>-->
-<!--    </ul>-->
-<!--  </nav>-->
+  <nav class="d-flex justify-content-center page" >
+    <ul class="pagination">
+      <li class="page-item"><button *ngIf="page > 1" (click)="page = page - 1; getAllHavePagination()" class="page-link bg-dark text-light" style="width: 100px">Previous</button></li>
+      <li class="page-item active "><button class="page-link" style="background-color: #030506 !important; border: 1px solid black" >{{page}}</button></li>
+      <li class="page-item"><button *ngIf="check"  (click)="page = page + 1; getAllHavePagination()" class="page-link bg-dark text-light" style="width: 100px">Next</button></li>
+    </ul>
+  </nav>
 </div>

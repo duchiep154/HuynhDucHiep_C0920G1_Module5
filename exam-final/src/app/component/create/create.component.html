@@ -44,7 +44,7 @@
         <div>
           <label>Kỳ hàn</label>
         <select [class]="createForm.get('kyHan').invalid && (createForm.get('kyHan').touched) ? 'border-danger' : ''" formControlName="kyHan" class="form-control">
-            <option value="">Chọn kỳ hàn</option>
+            <option value="">Chọn kỳ hạn</option>
             <option *ngFor="let k of kyHanList" [value]="k.id">
               {{k.name}}
             </option>
@@ -56,7 +56,7 @@
 
         <div>
           <label>Số tiền gửi</label>
-          <input formControlName="soTienGui" type="number" class="form-control" placeholder="Nhập so tien gui">
+          <input formControlName="soTienGui" type="number" class="form-control" placeholder="Nhập số tiền gửi ">
         </div>
         <p class="text-danger"
            *ngIf="createForm.get('soTienGui').hasError('min') && (createForm.get('soTienGui').touched || check)">Số tiền
@@ -70,7 +70,7 @@
 
         <div>
           <label>Lãi xuất</label>
-          <input formControlName="laiXuat" type="text" class="form-control" placeholder="Nhập họ và tên">
+          <input formControlName="laiXuat" type="text" class="form-control" placeholder="Nhập lãi suất">
         </div>
         <p class="text-danger"
            *ngIf="createForm.get('laiXuat').hasError('required') && (createForm.get('laiXuat').touched || check)">Lãi
@@ -78,7 +78,7 @@
 
         <div>
           <label>Ưu đãi</label>
-          <input formControlName="uuDai" type="text" class="form-control" placeholder="Nhập họ và tên">
+          <input formControlName="uuDai" type="text" class="form-control" placeholder="Nhập ữu đãi">
         </div>
         <p class="text-danger"
            *ngIf="createForm.get('uuDai').hasError('required') && (createForm.get('uuDai').touched || check)">Ưu đãi
@@ -89,7 +89,7 @@
 
     <div class="d-flex justify-content-end mt-3">
       <button routerLink="/list" style="width: 110px" class="btn btn-primary">Quay lại</button>
-      <button style="margin-left: 5px; width: 110px;" class="btn btn-success">Xác nhận</button>
+      <button style="margin-left: 5px; width: 110px;" class="btn btn-success" [disabled]="createForm.invalid">Xác nhận</button>
     </div>
   </form>
 </div>

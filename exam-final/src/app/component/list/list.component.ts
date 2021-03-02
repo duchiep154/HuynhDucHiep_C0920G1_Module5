@@ -27,7 +27,7 @@ export class ListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAllSoTietKiem();
+    this.getAllHavePagination();
   }
 
 
@@ -54,15 +54,15 @@ export class ListComponent implements OnInit {
     } else if (this.selete === 'name') {
       this.soTietKiemService.searchByName(value).subscribe(data => this.soTietKiemList = data);
     } else {
-      this.getAllSoTietKiem();
+      this.getAllHavePagination();
     }
   }
 
   getAllHavePagination() {
-    this.soTietKiemService.getAllHavePagination( this.page, 3).subscribe((data: SoTietKiem[]) => {
+    this.soTietKiemService.getAllHavePagination(  3,this.page).subscribe((data: SoTietKiem[]) => {
         this.soTietKiemList = data;
 
-        this.soTietKiemService.getAllHavePagination( this.page + 1 , 3).subscribe( (data2: SoTietKiem[]) => {
+        this.soTietKiemService.getAllHavePagination( 3, this.page+1).subscribe( (data2: SoTietKiem[]) => {
           this.check = data2.length !== 0;
         });
 

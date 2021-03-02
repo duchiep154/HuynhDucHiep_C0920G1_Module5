@@ -2,15 +2,19 @@
   "khachHang": [
     {
       "id": 1,
-      "name": "huynh duc hiep"
+      "name": "Huỳnh đức hiệp"
     },
     {
       "id": 2,
-      "name": "nguyen thi be ut"
+      "name": "Nguyễn thị bé út"
     },
     {
       "id": 3,
-      "name": "huynh duc phat"
+      "name": "Huỳnh Đức Phát"
+    },
+    {
+      "id": 4,
+      "name": "long tứ"
     }
   ],
   "soTietKiem": [
@@ -26,7 +30,7 @@
       },
       "khachHang": {
         "id": 1,
-        "name": "nguyen thi be hieu"
+        "name": "Huỳnh đức hiệp"
       },
       "id": 1
     },
@@ -41,26 +45,58 @@
         "name": "3 tháng"
       },
       "khachHang": {
-        "id": 3,
-        "name": "huynh duc phat"
+        "id": 2,
+        "name": "Huỳnh Đức long"
       },
       "id": 2
     },
     {
-      "ngayMoSo": "2021-02-16",
-      "ngayGui": "2021-02-08",
-      "soTienGui": 2007777777777,
-      "uuDai": "mu bao hiem",
-      "laiXuat": 8,
+      "ngayMoSo": "2021-03-03",
+      "ngayGui": "2021-03-02",
+      "soTienGui": 50000000,
+      "uuDai": "giam gia",
+      "laiXuat": "3",
       "kyHan": {
-        "id": 1,
-        "name": "3 tháng"
+        "id": 3,
+        "name": "12 tháng"
       },
       "khachHang": {
-        "id": 3,
-        "name": "huynh duc hiep hiep"
+        "id": 4,
+        "name": "Huỳnh Đức ti"
       },
-      "id": 3
+      "id": 4
+    },
+    {
+      "ngayMoSo": "2021-03-14",
+      "ngayGui": "2021-03-02",
+      "soTienGui": 50000000,
+      "uuDai": "kjm",
+      "laiXuat": "6",
+      "kyHan": {
+        "id": 3,
+        "name": "12 tháng"
+      },
+      "khachHang": {
+        "id": 2,
+        "name": "Nguyễn thị bé út"
+      },
+      "id": 6
+    },
+    {
+      "ngayMoSo": "2021-02-02",
+      "ngayGui": "2021-02-02",
+      "soTienGui": 50000000,
+      "uuDai": "bảo hiểm",
+      "laiXuat": "3",
+      "kyHan": {
+        "id": 4,
+        "name": "5 năm"
+      },
+      "khachHang": {
+        "id": 7,
+        "name": "long tứ"
+      },
+      "id": 7
     }
   ],
   "kyHan": [
@@ -78,7 +114,11 @@
     },
     {
       "id": 4,
-      "name": "Không kỳ hạn"
+      "name": "5 năm"
+    },
+    {
+      "id": 5,
+      "name": "không kỳ hạn"
     }
   ]
 }

@@ -109,7 +109,7 @@ export class UpdateComponent implements OnInit {
 
       this.router.navigateByUrl('/list');
 
-      this.showMessage.createSuccess();
+      this.showMessage.updateSuccess();
     });
 
   }
