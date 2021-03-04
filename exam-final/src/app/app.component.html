@@ -1,3 +1,4 @@
+
 <div class="header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -35,6 +36,7 @@
       </div>
     </div>
   </nav>
+
 </div>
 <div class="content bg-info">
   <div class="row mx-0">
@@ -50,7 +52,10 @@
       </div>
     </div>
     <div class="col-10 bg-danger main-content px-0">
-      <router-outlet></router-outlet>
+      <main [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+        <router-outlet #o="outlet"></router-outlet>
+      </main>
+<!--      <router-outlet></router-outlet>-->
     </div>
   </div>
 </div>

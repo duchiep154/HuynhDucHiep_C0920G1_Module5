@@ -107,7 +107,7 @@ export class UpdateComponent implements OnInit {
     this.soTietKiemService.update(this.updateForm.value, this.soTietKiem.id).subscribe(data => {
       console.log(data);
 
-      this.router.navigateByUrl('/list');
+      this.router.navigateByUrl('');
 
       this.showMessage.updateSuccess();
     });

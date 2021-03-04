@@ -9,6 +9,33 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <style>
+    .splash {
+      position: absolute;
+      z-index: 2000;
+      background: white;
+      color: gray;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .splash-title {
+      text-align: center;
+      max-width: 500px;
+      margin: 15% auto;
+      padding: 20px;
+    }
+
+    .splash-title h1 {
+      font-size: 26px;
+    }
+
+    .color-line {
+      border-radius: 4px 4px 0 0;
+    }
+  </style>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
           integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
@@ -24,6 +51,13 @@
 <!--  <script src="https://kit.fontawesome.com/yourcode.js"></script>-->
 </head>
 <body>
-<app-root></app-root>
+<app-root>
+  <div class="splash">
+    <div class="color-line"></div>
+    <div class="splash-title">
+      <img src="./assets/img/loader.svg" width="64" height="64" />
+    </div>
+  </div>
+</app-root>
 </body>
 </html>

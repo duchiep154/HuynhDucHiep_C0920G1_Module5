@@ -23,6 +23,7 @@ import { AttachServiceCreateComponent } from './component/attach-service/attach-
 import { AttachServiceDeleteComponent } from './component/attach-service/attach-service-delete/attach-service-delete.component';
 import { AttachServiceUpdateComponent } from './component/attach-service/attach-service-update/attach-service-update.component';
 import { ContractUpdateComponent } from './component/contract/contract-update/contract-update.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ContractUpdateComponent } from './component/contract/contract-update/co
         HttpClientModule,
         ReactiveFormsModule,
         MaterialModule,
+      BrowserAnimationsModule,
         FormsModule
     ],
   providers: [],

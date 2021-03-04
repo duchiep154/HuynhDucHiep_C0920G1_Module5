@@ -9,7 +9,7 @@ import {KhachHang} from '../model/khach-hang';
 })
 export class KhachHangService {
 
-  private url = 'http://localhost:3000/khachHang';
+  private url = 'http://localhost:8080/api-khachHang';
 
   constructor(private http: HttpClient) { }
 

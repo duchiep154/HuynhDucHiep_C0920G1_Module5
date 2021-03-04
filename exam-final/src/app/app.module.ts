@@ -13,11 +13,13 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {DetailComponent} from "./component/detail/detail.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
     HomeComponent,
     DeleteComponent,
     ListComponent,
@@ -28,6 +30,7 @@ import {DetailComponent} from "./component/detail/detail.component";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,

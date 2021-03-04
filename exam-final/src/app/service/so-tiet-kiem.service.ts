@@ -8,7 +8,7 @@ import {SoTietKiem} from '../model/so-tiet-kiem';
 })
 export class SoTietKiemService {
 
-  private url = 'http://localhost:3000/soTietKiem';
+  private url = 'http://localhost:8080/api-soTietKiem';
 
   constructor(private http: HttpClient) {
   }
@@ -18,16 +18,16 @@ export class SoTietKiemService {
   }
 
   getById(id: number): Observable<SoTietKiem> {
-    return this.http.get<SoTietKiem>(this.url + '/' + id);
+    return this.http.get<SoTietKiem>(this.url + '/detail' +'/'+ id);
   }
 
   deleteById(id: number): Observable<SoTietKiem> {
-    return this.http.delete<SoTietKiem>(this.url + '/' + id);
+    return this.http.delete<SoTietKiem>(this.url + '/delete' + '/' +id);
   }
 
 
   update(soTietKiem: SoTietKiem, id: number) {
-    return this.http.put<SoTietKiem>(this.url + '/' + id, soTietKiem);
+    return this.http.put<SoTietKiem>(this.url + '/update' + '/'+id, soTietKiem);
   }
 
 
@@ -44,6 +44,6 @@ export class SoTietKiemService {
     return this.http.get<SoTietKiem[]>(this.url  + '?_limit=' + limit + '&_page=' + page);
   }
   create(soTietKiem: SoTietKiem): Observable<SoTietKiem> {
-    return this.http.post<SoTietKiem>(this.url, soTietKiem);
+    return this.http.post<SoTietKiem>(this.url + '/create', soTietKiem);
   }
 }

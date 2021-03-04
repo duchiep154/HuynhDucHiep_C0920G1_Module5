@@ -8,7 +8,7 @@ import {IContractDetail} from '../model/contract-detail';
 })
 export class ContractDetailService {
 
-  private url = 'http://localhost:4000/contractDetail';
+  private url = 'http://localhost:3000/contractDetail';
 
   constructor(private http: HttpClient) { }
 

@@ -9,7 +9,7 @@ import {KyHan} from '../model/ki-han';
 })
 export class KyHanService {
 
-  private url = 'http://localhost:3000/kyHan';
+  private url = 'http://localhost:8080/api-kyHan';
 
   constructor(private http: HttpClient) { }
 

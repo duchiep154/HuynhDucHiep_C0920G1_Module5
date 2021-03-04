@@ -8,7 +8,7 @@ import {ICustomerType} from '../model/customer-type';
 })
 export class CustomerTypeService {
 
-  private url = 'http://localhost:4000/customerType';
+  private url = 'http://localhost:3000/customerType';
 
   constructor(private http: HttpClient) { }
 

@@ -8,7 +8,7 @@ import {IService} from '../model/service';
 })
 export class ServiceDao {
 
-  private url = 'http://localhost:4000/service';
+  private url = 'http://localhost:3000/service';
 
   constructor(private http: HttpClient) { }
 
